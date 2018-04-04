@@ -5,6 +5,8 @@ myApp.service('TemplateService', function () {
 
     var d = new Date();
     this.year = d.getFullYear();
+    this.date= d.getDate();
+    this.time= d.getTime();
 
     this.init = function () {
         this.header = "views/template/header.html";

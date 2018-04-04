@@ -41,7 +41,6 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
                 stateOff: 'glyphicon-off'
             }
         ];
-
     })
 
     .controller('LinksCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
@@ -56,3 +55,4 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             console.log(data);
         });
     });
+
