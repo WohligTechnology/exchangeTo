@@ -46,5 +46,9 @@ module.exports = [
   // Contorllers
   'frontend/js/controllers/controller.js',
   'frontend/js/controllers/header-controller.js',
-  'frontend/js/controllers/language-controller.js',
+  'frontend/views/content/kyc/kyc.js',
+  'frontend/views/content/profile/profile.js',
+  'frontend/views/content/report/report.js',
+  'frontend/views/content/trade/trade.js',
+  'frontend/views/content/wallet/wallet.js'
 ];

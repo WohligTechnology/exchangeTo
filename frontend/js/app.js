@@ -23,6 +23,31 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: tempateURL,
             controller: 'HomeCtrl'
         })
+        .state('kyc', {
+            url: "/kyc",
+            templateUrl: tempateURL,
+            controller: 'KYCCtrl'
+        })
+        .state('profile', {
+            url: "/profile",
+            templateUrl: tempateURL,
+            controller: 'ProfileCtrl'
+        })
+        .state('report', {
+            url: "/report",
+            templateUrl: tempateURL,
+            controller: 'ReportCtrl'
+        })
+        .state('trade', {
+            url: "/trade",
+            templateUrl: tempateURL,
+            controller: 'TradeCtrl'
+        })
+        .state('wallet', {
+            url: "/wallet",
+            templateUrl: tempateURL,
+            controller: 'WalletCtrl'
+        })
         .state('links', {
             url: "/links",
             templateUrl: tempateURL,

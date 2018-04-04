@@ -10,20 +10,25 @@ $red: #d9534f !default;
 $orange: #f0ad4e !default;
 $yellow: #ffd500 !default;
 $green: #5cb85c !default;
-$blue: #0275d8 !default;
-$teal: #5bc0de !default;
+$darkblue:#192d44 !default; //changed according to project color code
+$dblue: #132233 !default; //changed according to project color code
+$blue: #19b6c1 !default; //changed according to project color code
+$teal: #00cccc !default; //changed according to project color code
 $pink: #ff5b77 !default;
 $purple: #613d7c !default;
 // Create grayscale
 $gray-dark: #292b2c !default;
-$gray: #464a4c !default;
+$font-gray: #333333 !default; //added new
+$gray: #666666 !default;
 $gray-light: #636c72 !default;
 $gray-lighter: #eceeef !default;
-$gray-lightest: #f7f7f9 !default;
+$gray-lightest: #fbfbfb !default; //changed according to project color code
 // Reassign color vars to semantic color scheme
-$brand-primary: $blue !default;
+$brand-primary: $blue !default; //changed according to project color code
+$dark-blue: $dblue !default; //changed according to project color code
+$darker-blue: $darkblue !default; //changed according to project color code
 $brand-success: $green !default;
-$brand-info: $teal !default;
+$brand-info: $teal !default; //changed according to project color code
 $brand-warning: $orange !default;
 $brand-danger: $red !default;
 $brand-inverse: $gray-dark !default;
@@ -71,6 +76,7 @@ Consolas,
 "Liberation Mono",
 "Courier New",
 monospace !default;
+$font-default: Lato !default; //new variable added
 $font-family-base: $font-family-sans-serif !default;
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg: 1.25rem !default;
@@ -135,8 +141,42 @@ $dropdown-box-shadow: 0 .5rem 1rem rgba($black, .175) !default;
 // @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "../../bower_components/bootstrap/scss/bootstrap";
 @import "other/font-fix";
+//fonts
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: LatoItalic;
+    src: url(../fonts/Lato/Lato-Italic.ttf);
+}
+
+@font-face {
+    font-family: LatoLightItalic;
+    src: url(../fonts/Lato/Lato-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: LatoBold;
+    src: url(../fonts/Lato/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: PoppinsLight;
+    src: url(../fonts/Poppins/Poppins-Light.ttf);
+}
+
 body {
     padding-top: 70px;
+    font-family: $font-default;
+    font-size: 1rem;
+    color: $font-gray;
 }
 
 img.loading {
@@ -262,4 +302,26 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+// classes for background for all pages
+.gray-background {
+    background-color: $gray-lightest;
+}
+
+//classes for fonts
+.label-color {
+    color: $gray;
+}
+
+.font-white {
+    color: $white;
+}
+
+.facebook-bg {
+    color: #4470ce;
+}
+
+.google-bg {
+    color: #d54e38;
 }
