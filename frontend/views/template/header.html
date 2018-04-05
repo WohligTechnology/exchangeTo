@@ -1,7 +1,7 @@
 <header hide-on-scroll>
-    <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
-        <a class="navbar-brand" href="#">
-            <img src="img/logo.png" alt="logo" width="20">
+    <nav class="navbar navbar-expand-md nav-background fixed-top">
+        <a class="navbar-brand" ui-sref="home">
+            <img src="../img/logo.png" alt="logo" class="img-fluid">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -10,5 +10,33 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto" ng-include="template.menu"></ul>
         </div>
+
+        <ul class="list-unstyled d-flex align-items-center mb-0 float-right">
+            <li class="px-3">
+                <a href="" class="d-flex">
+                    <div class="mr-1 font-white font14">
+                        <p class="mb-0">Total: 0 INR</p>
+                        <p class="mb-0">Avail: 0 INR</p>
+                    </div>
+                    <div class="align-self-center"><i class="fas fa-globe fa-2x font-white"></i></div>
+                </a>
+            </li>
+            <li class="px-3"><a><span class="fa-layers">
+                <i class="fas fa-envelope fa-2x font-white"></i>
+                <span class="fa-layers-counter fa-3x">10</span>
+              </span></a></li>
+            <li class="px-3">
+                <a href="" class="d-flex align-items-center">
+                    <div class="profile_img mr-2">
+                        <img src="../img/profile.jpg" class="img-fluid" width="40">
+                    </div>
+                    <div class="font-white">
+                        <p class="mb-0 font14">Sample@gmail.com</p>
+                        <small class="fontPoppinsRegular font12">Cheif Authority</small>
+                    </div>
+                </a>
+            </li>
+            <li class="pl-3"><a><i class="fab fa-buromobelexperte fa-2x font-white"></i></a></li>
+        </ul>
     </nav>
 </header>

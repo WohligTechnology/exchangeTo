@@ -172,6 +172,23 @@ $dropdown-box-shadow: 0 .5rem 1rem rgba($black, .175) !default;
     src: url(../fonts/Poppins/Poppins-Light.ttf);
 }
 
+.fontLatoRegular{
+    font-family: Lato;
+}
+
+.fontPoppinsRegular{
+    font-family: Poppins;
+}
+
+.font14{
+    font-size: 0.875rem;
+}
+
+.font12{
+    font-size: 0.75rem;
+    color: #bfbfbf;
+}
+
 body {
     padding-top: 70px;
     font-family: $font-default;
@@ -328,6 +345,26 @@ header {
 
 .google-bg {
     color: #d54e38;
+}
+
+//scss for header
+//header scss
+.profile_img {
+    width: 40px;
+    height: 40px;
+    background: red;
+    border-radius: 50%;
+    img{
+        border-radius: 50%;
+    }
+}
+.fa-layers-counter{
+top: -10px;
+right: -20px;
+background-color: $brand-primary;
+}
+.nav-background {
+    background-color: $darker-blue;
 }
 
 //class for sidebar

@@ -8287,6 +8287,19 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: PoppinsLight;
   src: url(../fonts/Poppins/Poppins-Light.ttf); }
 
+.fontLatoRegular {
+  font-family: Lato; }
+
+.fontPoppinsRegular {
+  font-family: Poppins; }
+
+.font14 {
+  font-size: 0.875rem; }
+
+.font12 {
+  font-size: 0.75rem;
+  color: #bfbfbf; }
+
 body {
   padding-top: 70px;
   font-family: Lato;
@@ -8415,6 +8428,22 @@ header {
 .google-bg {
   color: #d54e38; }
 
+.profile_img {
+  width: 40px;
+  height: 40px;
+  background: red;
+  border-radius: 50%; }
+  .profile_img img {
+    border-radius: 50%; }
+
+.fa-layers-counter {
+  top: -10px;
+  right: -20px;
+  background-color: #19b6c1; }
+
+.nav-background {
+  background-color: #192d44; }
+
 .sidebar {
   height: 100%;
   position: fixed;
@@ -8432,9 +8461,6 @@ header {
 
 .pull-right {
   float: right; }
-
-.display-inline {
-  display: inline-block; }
 
 #fancybox-loading,
 .fancybox-close,
