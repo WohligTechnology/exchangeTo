@@ -190,8 +190,8 @@ $dropdown-box-shadow: 0 .5rem 1rem rgba($black, .175) !default;
 }
 
 body {
-    padding-top: 70px;
-    font-family: $font-default;
+    padding-top: 50px;
+    @extend .fontLatoRegular;
     font-size: 1rem;
     color: $font-gray;
 }
